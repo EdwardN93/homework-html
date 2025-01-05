@@ -13,6 +13,7 @@
         <div class="long-dash"></div>
       </div>
 
+
       <form class="contact-form">
         <div class="form-group">
           <label for="email">Email</label>
@@ -22,6 +23,7 @@
             id="email"
             class="form-control"
             placeholder="Enter your Email"
+            required=""
           />
         </div>
 
@@ -33,18 +35,26 @@
             id="password"
             class="form-control"
             placeholder="Enter your password"
+            required=""
           />
         </div>
 
         <div class="form-group">
-          <label for="password">Age</label>
+          <label for="age">Age</label>
           <input
             type="number"
             name="age"
             id="age"
             class="form-control"
+            min="18"
+            max="99"
             placeholder="Your age"
           />
+        </div>
+        
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
         </div>
 
         <div class="form-group">
@@ -60,20 +70,59 @@
 
         <div class="form-group">
           <p class="no-padding-no-margin">Would you buy AMG ONE?</p>
-          <label for="yes">
+          <label>
           <input type="radio" name="buy-car" id="yes" value="yes">Yes
         </label>
 
-          <label for="no">
+          <label>
             <input type="radio" name="buy-car" id="no" value="no">No
           </label>
 
-            <label for="maybe">
+            <label>
               <input type="radio" name="buy-car" id="maybe" value="maybe">Maybe
             </label>
         </div>
 
-        <input type="submit" value="submit" />
+        <div class="form-group">
+          <p class="no-padding-no-margin">What would you like to add to your AMG ONE? (check all that apply)</p>
+          <label>
+            <input type="checkbox" name="options" id="radio" value="radio">
+            Radio
+          </label>
+          <label>
+            <input type="checkbox" name="options" id="electric-display" value="electric-display">
+            Full Electric Display
+          </label>
+
+          <label>
+          <input type="checkbox" name="options" id="heated-seats" value="heated-seats">
+            Heated Seats
+          </label>
+
+          <label>
+          <input type="checkbox" name="options" id="slick" value="slick">
+            Slick Tires
+          </label>
+
+          <label>
+          <input type="checkbox" name="options" id="badge" value="badge">
+            AMG Badge
+          </label>
+
+          <label>
+          <input type="checkbox" name="options" id="tinted" value="tinted">
+            Black Tinted Windows
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p class="no-padding-no-margin">Any suggestions?</p>
+          <textarea name="comment" class="textarea" id="input-textarea" placeholder="Enter your comments here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="form-control submit-button"/>Submit</button>
+        </div>
       </form>
     </div>
   </body>

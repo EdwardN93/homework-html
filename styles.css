@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: #b21e23;
 }
 
 a,
@@ -64,13 +64,13 @@ ul {
 
 .dash {
   content: "";
-  border: 1px solid red;
+  border: 1px solid #b21e23;
   width: 50px;
 }
 
 .long-dash {
   content: "";
-  border: 1px solid red;
+  border: 1px solid #b21e23;
   width: 250px;
 }
 .wrapper,
@@ -101,7 +101,7 @@ li {
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  width: 25vw;
+  width: 30vw;
   margin-top: 25px;
 }
 
@@ -117,4 +117,23 @@ li {
   display: block;
   padding: 0.375rem 0.75rem;
   width: 100%;
+}
+
+.textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.6rem;
+  resize: vertical;
+}
+
+.submit-button {
+  border: none;
+  background-color: #37af65;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #b21e23;
 }

@@ -6,5 +6,75 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main-wrapper">
+      <div class="heading">
+        <h2>Tell us more about you</h2>
+        <div class="long-dash"></div>
+      </div>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Create password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-control"
+            placeholder="Enter your password"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            class="form-control"
+            placeholder="Your age"
+          />
+        </div>
+
+        <div class="form-group">
+          <p class="no-padding-no-margin">Preffered car color</p>
+          <select type="password" name="car-color" id="dropdown" class="form-control" />
+            <option value="" disabled="" selected="">Select your color</option>
+            <option value="patagonia-red">Patagonia-Red</option>
+            <option value="hightech-silver">Hightech-Silver</option>
+            <option value="graphit-gray">Graphit-Gray</option>
+            <option value="diamond-white">Diamond-White</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p class="no-padding-no-margin">Would you buy AMG ONE?</p>
+          <label for="yes">
+          <input type="radio" name="buy-car" id="yes" value="yes">Yes
+        </label>
+
+          <label for="no">
+            <input type="radio" name="buy-car" id="no" value="no">No
+          </label>
+
+            <label for="maybe">
+              <input type="radio" name="buy-car" id="maybe" value="maybe">Maybe
+            </label>
+        </div>
+
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+  </body>
 </html>

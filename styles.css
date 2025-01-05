@@ -23,7 +23,9 @@ h3,
 h4,
 h5,
 h6,
+p,
 section,
+label,
 main {
   color: white;
 }
@@ -42,6 +44,22 @@ ul {
   gap: 20vh;
   list-style-type: none;
   padding: 0;
+}
+
+.no-padding-no-margin {
+  padding: 0;
+  margin: 0;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-wrapper-contact {
+  margin-top: 25px;
 }
 
 .dash {
@@ -69,4 +87,34 @@ li {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50vw;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 25vw;
+  margin-top: 25px;
+}
+
+.form-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-control {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  width: 100%;
 }
